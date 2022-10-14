@@ -1,14 +1,19 @@
-version: "1.0"
+version: "1.1"
 services:
-  mongo-db:
-    image: mongo:latest
-    container_name: mongo-container
+  postgres-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+  adminer:
+    image: adminer
+    restart: always
     ports:
       - "27017:27017"
   springboot-build-app:
-    image: springboot-build-app:1.0
+    image: springboot-build-app:1.1
     container_name: springboot-build-app
     ports:
       - "8080:8080"
     links:
-      - mongo-db
+      - postgres-db

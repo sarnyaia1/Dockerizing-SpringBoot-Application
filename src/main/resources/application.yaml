@@ -1,6 +1,6 @@
 spring:
   data:
-    mongodb:
+    postgres:
       database: Store
-      host: mongo-db
+      host: postgres-db
       port: 27017
