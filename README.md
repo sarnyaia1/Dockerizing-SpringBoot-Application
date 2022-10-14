@@ -14,3 +14,5 @@
 - (docker run -p 8080:8080 --name builded-image --link mongo-container-name:mongo -d builded-image:1.0) 
 - OR (docker compose -> The applications image need to be built by hand before to compose!!)
 11. Add items with POST method and search them with GET (Postman)
+12. Test PostgreSQL
+13. Test Mongo Compass
