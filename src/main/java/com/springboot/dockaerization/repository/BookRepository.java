@@ -1,4 +1,4 @@
-package com.springboot.dockaerization.dao;
+package com.springboot.dockaerization.repository;
 
 import com.springboot.dockaerization.model.Book;
 import org.springframework.data.mongodb.repository.MongoRepository;

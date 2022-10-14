@@ -1,6 +1,6 @@
 spring:
   data:
     mongodb:
-      database: Book
-      host: mongoforspring
+      database: Store
+      host: mongo-db
       port: 27017
